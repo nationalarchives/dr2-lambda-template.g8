@@ -48,3 +48,12 @@ Imports the lambda, scalatest and logging dependencies as well as configuring sb
 
 ### README
 A README file with the name of the repo split as the heading. For example `test-repo` becomes `# Test Repo`
+
+## Pre commit hooks
+There is a config file for [pre-commit](https://pre-commit.com/) which runs scalafmtCheckAll before any commits. To install the hook:
+
+```bash
+pip install pre-commit # This only needs to be done once globally
+git init
+pre-commit install
+```

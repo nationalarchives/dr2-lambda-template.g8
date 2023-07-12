@@ -1,4 +1,4 @@
-name: DR2 Deploy $name;format="space,start"$ Lambda
+name: DR2 Deploy $full_name$ Lambda
 on:
   workflow_dispatch:
     inputs:
