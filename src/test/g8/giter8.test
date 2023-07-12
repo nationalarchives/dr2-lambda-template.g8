@@ -7,14 +7,15 @@ $exists build.sbt
 $exists README.md
 $exists LICENCE
 $exists .scalafmt.conf
+$exists .pre-commit-config.yaml
 
 $exists project/build.properties
 $exists project/Dependencies.scala
 $exists project/plugins.sbt
 
 $exists src/main/scala/uk/gov/nationalarchives/Lambda.scala
-$exists src/main/resources/application.properties
+$exists src/main/resources/application.conf
 $exists src/main/resources/log4j2.properties
 
 $exists src/test/scala/uk/gov/nationalarchives/LambdaTest.scala
-$exists src/test/resources/application.properties
+$exists src/test/resources/application.conf
