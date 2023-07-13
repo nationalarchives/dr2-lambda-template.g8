@@ -11,7 +11,7 @@ lazy val root = (project in file(".")).
       log4jCore,
       log4jTemplateJson,
       lambdaCore,
-      $if(use_sqs_event.truthy)$
+      $if(use_event.truthy)$
       lambdaJavaEvents,
       $endif$
       scalaTest % Test

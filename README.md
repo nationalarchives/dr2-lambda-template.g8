@@ -12,10 +12,11 @@ Used for the folder name, the name of the assembled jar and the lambda name in t
 Kebab case should be used.
 ### organisation 
 Used for the package structure and the organisation in build.sbt
-### use_sqs_event
-Creates a lambda which takes an SQS event. Can't be used with use_input_stream
+### use_event
+Creates a lambda which takes an event. This is an SQS event by default but the aws-lambda-java-events is imported so this can be swapped out for another one.
+Can't be used with use_input_stream
 ### use_input_stream
-Creates a lambda which takes an input stream. Can't be used with use_sqs_event
+Creates a lambda which takes an input stream. Can't be used with use_event
 ### setup_ci
 Creates the .github/workflows folder and a test, build and deploy workflow. This is DR2 specific so it can be ignored.
 

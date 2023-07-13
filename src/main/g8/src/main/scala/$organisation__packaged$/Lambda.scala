@@ -6,7 +6,7 @@ import java.io.{InputStream, OutputStream}
 
 class Lambda extends RequestStreamHandler {
   override def handleRequest(input: InputStream, output: OutputStream, context: Context): Unit = {
-$elseif(use_sqs_event.truthy)$
+$elseif(use_event.truthy)$
 import com.amazonaws.services.lambda.runtime.{Context, RequestHandler}
 import com.amazonaws.services.lambda.runtime.events.SQSEvent
 

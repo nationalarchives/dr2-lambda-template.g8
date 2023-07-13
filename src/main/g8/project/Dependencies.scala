@@ -5,7 +5,7 @@ object Dependencies {
   lazy val log4jCore = "org.apache.logging.log4j" % "log4j-core" % logbackVersion
   lazy val log4jTemplateJson = "org.apache.logging.log4j" % "log4j-layout-template-json" % logbackVersion
   lazy val lambdaCore = "com.amazonaws" % "aws-lambda-java-core" % "1.2.2"
-  $if(use_sqs_event.truthy) $
+  $if(use_event.truthy) $
   lazy val lambdaJavaEvents = "com.amazonaws" % "aws-lambda-java-events" % "3.11.1"
   $endif$
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.2.15"
