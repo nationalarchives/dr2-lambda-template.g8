@@ -1,0 +1,11 @@
+name: DR2 Run Lambda Tests
+on:
+  push:
+jobs:
+  test:
+    uses: nationalarchives/dr2-github-actions/.github/workflows/dr2_test.yml@main
+    with:
+      repo-name: $name$
+      test-command: sbt g8Test
+    secrets:
+      SLACK_WEBHOOK: \${{ secrets.SLACK_WEBHOOK }}
