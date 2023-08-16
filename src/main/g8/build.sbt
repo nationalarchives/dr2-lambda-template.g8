@@ -16,7 +16,8 @@ lazy val root = (project in file(".")).
       lambdaJavaEvents,
       $endif$
       scalaTest % Test
-    )
+    ),
+    scalacOptions += "-deprecation"
   )
 (assembly / assemblyJarName) := "$name$.jar"
 
